@@ -1,0 +1,18 @@
+{
+  "name": "landnet-portal",
+  "version": "3.0.0",
+  "description": "Blockchain Land Records System — Technical University of Kenya | BSc Land Administration",
+  "main": "server.js",
+  "scripts": {
+    "start":    "node server.js",
+    "dev":      "node --watch server.js",
+    "reset-db": "node -e \"require('fs').existsSync('landnet.db') && require('fs').unlinkSync('landnet.db'); console.log('Database reset.');\""
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "bcryptjs":       "^2.4.3"
+  },
+  "keywords": ["blockchain","land-records","hyperledger-fabric","kenya"],
+  "author": "ESLM/00770/2021",
+  "license": "MIT"
+}
